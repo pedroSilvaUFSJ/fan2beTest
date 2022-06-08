@@ -1,0 +1,88 @@
+.grayBackground {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  height: 100%;
+  width: 100%;
+
+  opacity: 90%;
+  z-index: 2;
+  background-color: var(--black);
+}
+
+.auth {
+  position: fixed;
+  top: 0;
+  right: 0;
+
+  width: 75%;
+  height: 100%;
+  padding: 2% 4%;
+
+  z-index: 3;
+  background-color: var(--white);
+
+  display: flex;
+  flex-direction: column;
+
+  .close {
+    height: 16px;
+    width: 16px;
+    align-self: flex-end;
+    cursor: pointer;
+  }
+
+  .authcontent{
+    flex-grow: 1;
+    .menu {
+      cursor: pointer;
+      height: 36px;
+      border-bottom: 1px solid var(--ice);
+      margin-bottom: 24px;    
+
+      span {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0em;
+        margin-right: 1rem;
+      }
+      .selected {
+        font-weight: 700;
+        position: relative;
+      }
+
+      .selected:after {
+        content: "";
+        height: 5px;
+        width: 100%;
+
+        position: absolute;
+        left: 0;
+        top: 30px;
+
+        background-color: var(--green);
+      }
+    }
+  }
+
+  .footnote {
+    margin-top: auto;
+    border-top: 1px solid var(--ice);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 768px) {
+  .auth {
+    width: 70%;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+}

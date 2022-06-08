@@ -1,0 +1,48 @@
+.content {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0rem;
+    margin: 0rem;
+    height: 64px;
+    max-height: 64px;
+    font-size: 16px;
+    background-color: var(--black);
+    
+    .item {
+        display: inline-flex;
+        align-items: center;
+        margin-right: 0.5rem;
+        color: var(--white);
+        a {
+            text-decoration: none;
+            svg {
+                display: none;
+            }
+        }
+        .active {
+            color: var(--green);
+        }
+    }
+
+    
+    @media only screen and (max-width: 768px) {
+        flex-direction: column;
+        padding-bottom: 2rem;
+        padding-top: 2rem;
+        margin-top: 1rem;
+
+        display: contents;
+
+        .item {
+            &:first-child {
+                margin-top: 16px;
+            }
+            a {
+                svg {
+                    display: block;
+                }
+            }
+        }        
+    }
+}

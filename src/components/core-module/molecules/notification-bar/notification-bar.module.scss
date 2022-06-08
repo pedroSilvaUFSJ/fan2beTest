@@ -1,0 +1,14 @@
+.content {
+    min-height: 4rem;
+    .draggable{
+        display: flex;
+        flex-direction: row;
+        cursor: pointer;
+
+        /* TODO Make draggable */
+        overflow-x: auto; 
+        padding-bottom: 1rem;
+    }
+}
+
+

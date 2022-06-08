@@ -1,0 +1,30 @@
+.item {
+    padding-top: 16px;
+    padding-bottom: 48px;
+
+    .entityId{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        span {            
+            font-size: 1.1rem;
+            font-weight: 500;
+            line-height: 24px;
+            letter-spacing: -0.01em;
+            margin-left: 0.5rem;
+            margin-right: 1rem;
+            flex-grow: 1;
+        }
+        img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .button{
+            width: 154px;
+            height: 48px;
+            margin-left: 76px;
+        }
+    }
+}

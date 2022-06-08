@@ -1,0 +1,26 @@
+.button {
+    color: var(--gray2);
+    background-color: var(--cotton2);
+    border: 1px solid var(--ice);
+    width: 120px;
+    height: 64px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    .imageIcon {
+        width: 18px;
+        height: 19.92px;
+        padding-right: 12px;
+    }
+    p {
+        font-weight: 500;
+        line-height: 24px;
+        font-size: 15px;
+        color: var(--green);
+    }
+    @media only screen and (max-width: 768px) {
+        height: 40px !important;
+    }
+}

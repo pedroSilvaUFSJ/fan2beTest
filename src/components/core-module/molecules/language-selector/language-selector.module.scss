@@ -1,0 +1,35 @@
+.sectionLanguages {
+    
+    height: 5rem;
+    font-size: 1rem;
+    
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    
+    color: var(--white);
+
+    a {
+        display: flex;
+        img {
+            display: none;
+            margin-right: 12px;
+        }
+    }
+    .active{
+        img {display: block;}
+        color: var(--green);
+    }
+
+    span {
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 19px;
+        letter-spacing: 0em;
+
+        margin-right: 16px;
+        cursor: pointer;
+    }
+}

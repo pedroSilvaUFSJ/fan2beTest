@@ -1,0 +1,29 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    // padding-left: 1rem;
+    // padding-right: 1rem;
+    // border-left: 1px solid var(--gray);
+    outline: none;
+    div {
+        height: 2px;
+        width: 20px;
+        background: var(--green);
+
+        -webkit-transition: all 0.2s ease;
+        -moz-transition: all 0.2s ease;
+        -o-transition: all 0.2s ease;
+        transition: all 0.2s ease;
+    }
+    .lineTop {
+        transform-origin: top left;
+        margin-bottom: 5px;
+    }
+    .lineBottom {
+        transform-origin: top left;
+        margin-top: 5px;
+    }
+}

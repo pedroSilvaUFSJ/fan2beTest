@@ -1,0 +1,28 @@
+.advertisement, 
+.advertisementTop, 
+.advertisementFooter, 
+.advertisementSide, 
+.advertisementASide, 
+.advertisementMid, 
+.advertisementClubArticle, 
+.advertisementMiddleText,
+.advertisementRandom,
+.advertisementEndText {
+    cursor: pointer;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height:100%;
+    width: 100%;
+
+    img{
+        width: 100%;
+        object-fit: cover;    
+    }
+    @media only screen and (max-width: 768px) {
+    
+    }
+}

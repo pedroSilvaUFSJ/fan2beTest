@@ -1,0 +1,39 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    .title {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 132.5%;
+        color: var(--black-dark);
+        padding-bottom: 8px;
+        padding-top: 24px;
+    }
+    .items {
+        display: flex;
+        flex-wrap: wrap;
+        .icon {
+            width: 25px;
+            padding-right: 12px;
+        }
+        .item {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 132.5%;
+            text-decoration-line: underline;
+            color: var(--green);
+            padding-right: 16px;
+        }
+    }
+    @media only screen and (max-width: 768px) {
+        padding-top: 32px;
+        .title {
+            padding-top: 0px;
+        }
+        .item {
+            font-size: 14px;
+        }
+    }
+}

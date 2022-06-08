@@ -1,0 +1,105 @@
+.content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+
+    &__first {
+        .label {
+            color: var(--black);
+            padding-bottom: 0.7rem;
+        }
+        min-width: 50%;
+        display: flex;
+        flex-direction: column;
+        padding-top: 2rem;
+
+        .subscription {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin-right: 1rem;
+            padding-right: 1rem;
+            border-right: 2px solid var(--ice);
+            
+            &__submit {
+                max-width: 119px;
+                margin-left: 1rem;
+            }
+            &__error {
+                max-width: 360px;
+                color: var(--red)
+            }
+            &__sucess{
+                font-size: 1rem;
+            }
+        }
+    }
+    &__second {
+        .label {
+            color: var(--black);
+            padding-bottom: 0.7rem;
+        }
+        display: flex;
+        flex-direction: column;
+        padding-top: 2rem;
+        padding-left: 3.33%;
+        .socialNetwork {
+            display: flex;
+            flex-direction: row;
+            a {
+                &:hover { color:var(--white) }
+                &:visited { color:var(--white) }
+            }
+        }
+    }
+
+    @media only screen and (max-width: 768px) {
+        margin: 0 auto;
+        flex-direction: column;
+        padding-bottom: 2rem;
+        // margin: 0rem 1rem;
+
+        &__first {
+            padding-top: 0rem;
+            min-width: 100%;
+            
+            .subscription {
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                border-right: 0px;
+                border-bottom: 1px;
+                margin-right: 0rem;
+                padding-right: 0rem;
+                padding-bottom: 1.5rem;
+
+                &__submit {
+                    max-width: 100%;
+                    margin-top: 1rem;
+                    margin-left: 0rem;
+                }
+
+            }
+        }
+        &__second {
+            border-top: 1px solid var(--ice);
+            flex-direction: row;
+            justify-content: space-between;
+            padding-left: 0rem;
+            .socialNetwork {
+                display: flex;
+                flex-direction: row;
+            }
+        }
+    }
+}
+
+.inner {
+    border-top: 1px solid var(--ice);
+    max-width: 1120px;
+    margin: 0 auto;
+}

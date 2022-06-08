@@ -1,0 +1,28 @@
+.button {
+  color: var(--gray2);
+  background-color: var(--cotton2);
+  border: 1px solid var(--ice);
+
+  box-sizing: border-box;
+  border-radius: 3px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 9px;
+
+  cursor: pointer;
+
+  .imageIcon {
+    width: 19px;
+    height: 20px;
+  }
+  span {
+    margin-left: 12px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 24px;
+  }
+}

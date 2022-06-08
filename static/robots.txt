@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://test.fan2.be/sitemap/sitemap.xml

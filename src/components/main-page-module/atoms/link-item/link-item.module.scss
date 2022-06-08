@@ -1,0 +1,21 @@
+.content {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 132.5%;
+    color: var(--white);
+    min-width: fit-content;
+    text-decoration: none; 
+    display: flex;
+    align-items: center;
+
+    &:active {
+        color: var(--green);
+    }
+
+    .fontAwesome{
+        padding-right: 1rem;
+        width: 2.3rem;
+        height: 2.3rem;
+    }
+}

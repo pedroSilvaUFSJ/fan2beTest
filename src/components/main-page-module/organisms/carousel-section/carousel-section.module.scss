@@ -1,0 +1,75 @@
+.content {
+    border-left: solid 1px var(--ice);
+    border-top: solid 1px var(--ice);
+    border-bottom: solid 1px var(--ice);
+
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+
+        &__title { color: var(--black); }
+
+        &__link {
+            font-weight: 500;
+            font-size: 1.2rem;
+            color: var(--green);
+            text-decoration: none;
+            
+            &__message{ padding-right: 8px; }
+            :hover { text-decoration: underline; }
+            h1 { margin-right: 0.5rem; }
+        }
+    }
+    .slider {
+        padding-top: 2rem;
+        
+        > div > div > div > div > div > div { // ONE SLIDER
+            margin-right: 1rem;  
+        }
+        
+        span { //SLIDER TEXT
+            text-overflow: ellipsis;
+            overflow: hidden;
+            display: -webkit-box;
+            max-height: 9.4rem;
+            max-width: 100%;
+            -webkit-line-clamp: 4;
+            -webkit-box-orient: vertical;
+        }
+    }
+
+    @media only screen and (max-width: 768px) {
+        padding-top: 1.5rem;
+        padding-bottom: 2rem;
+        padding-left: 0.9rem;
+        padding-right: 0rem;
+
+        .header {
+            max-height: 4.5rem;
+            justify-content: space-between;
+            &__title {
+                font-size: 22px;
+                margin-bottom: 1rem;
+            }
+            &__link {
+                &__message { display: none; }
+                &__icon {
+                    svg { width: 1.7rem; }
+                }
+            }
+        }
+        .slider {
+            padding-top: 0rem;
+            a, span { font-size: 1rem; } 
+
+            span{
+                max-height: 5.5rem;
+            }
+        }
+    }
+}

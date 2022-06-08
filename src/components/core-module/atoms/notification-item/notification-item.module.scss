@@ -1,0 +1,58 @@
+.content {
+    width: 100px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    .imageContent {
+        margin-top: 1rem;
+        position: relative;
+        img {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .imageAlert {
+            width: 42px;
+            height: 42px;
+            border: 3px solid var(--red);
+        }
+        .imageNormal {
+            width: 42px;
+            height: 42px;
+            border: 3px solid var(--lightgray1);
+        }
+        .circleStatus {
+            width: 12px;
+            height: 12px;
+            background: var(--red);
+            border-radius: 50%;
+            right: 0;
+            bottom: 1px;
+            position: absolute;
+        }
+    }
+    .title{
+        text-overflow: ellipsis;
+        overflow: hidden;
+        display: -webkit-box;
+        max-width: 100%;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+    }
+
+    div {
+        padding-top: 0.2rem;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 17px;
+
+        text-align: center;
+        letter-spacing: 0.01em;
+        color: var(--white);
+    }
+}
+

@@ -1,0 +1,51 @@
+h1{
+                
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 34px;
+    letter-spacing: -0.01em;
+    text-align: left;
+    margin-bottom: 32px;
+}
+.logoff{
+    
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+
+    color: var(--white);
+    background-color: var(--green);
+    border: 1px solid var(--green);
+
+    box-sizing: border-box;
+    border-radius: 3px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 18px;
+    width: 138px;
+    height: 44px;
+    margin-bottom: 24px;
+    cursor: pointer;
+
+    .imageIcon {
+        width: 19px;
+        height: 20px;
+        margin-right: 12px;
+    }
+    span {
+        
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: 0em;
+
+    }                
+}

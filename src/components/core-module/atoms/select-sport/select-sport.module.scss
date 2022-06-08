@@ -1,0 +1,21 @@
+
+.selectInput {
+    display: flex;
+    align-items: center;
+}
+
+.multiselect {
+    width: 100%;
+    margin-left: 10px;
+    :nth-child(1) {
+        border: 0 !important;
+        background-color: var(--cotton);
+    }
+}
+
+select {
+    height: 100%;
+    width: 95%;
+    border: 0;
+    background: var(--cotton);
+}

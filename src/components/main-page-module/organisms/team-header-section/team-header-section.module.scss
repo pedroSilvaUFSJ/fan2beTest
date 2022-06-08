@@ -1,0 +1,113 @@
+.teamheader {
+  background-color: var(--black);
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  .cover {
+    height: 280px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    &__image {
+      width: 100%;
+      height: 100%;
+      margin: 0 auto;
+    }
+  }
+  
+  .info{
+    height: 6.5rem;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-wrap: wrap;
+
+    &__tagname{
+      max-height: 68px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      align-items: center;
+
+      &__logo{
+        > a > div {
+          img{
+            height: 158px;
+            width: 158px;
+          }
+        }
+      }
+      h1 {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 34px;
+        letter-spacing: -0.01em;
+        color: var(--white);
+        margin-bottom: 0rem;
+        margin-left: 1.5rem;
+      }
+      &__menu{
+        display: none;
+      } 
+    }
+  }
+
+
+
+  @media only screen and (max-width: 768px) {    
+    .info{
+      height: 8rem;
+      &__tagname{
+        display: flex;
+        &__title{
+          width: 70%;
+        }
+        &__logo{
+          > a > div {
+            img{
+              height: 109px;
+              width: 7rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 400px) {    
+    .info{
+      height: 12rem;
+
+      &__tagname{
+        flex-direction: column;
+        justify-content: center;
+        max-height: unset;
+        flex-wrap: unset;
+        
+        &__title{
+          width: 100%;
+          h1{
+            text-align: center;
+            margin-left: 0;
+            margin-top: 1rem;
+          }
+        }
+        &__logo{
+          > a > div {
+            img {
+              width: 5rem;
+              height: 5rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+

@@ -1,0 +1,33 @@
+.bottom{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    
+    height: 5rem;
+    font-size: 15px;
+    color: var(--white);
+
+    > span, a:not(:last-of-type) {
+        text-align: center;
+        margin-right: 1rem;
+    }
+    > span{ color: var(--lightgray1); }
+
+    @media only screen and (max-width: 768px) {
+        justify-content: center;
+    }
+    @media only screen and (max-width: 400px) {
+        a:not(:last-of-type) {
+            max-width: 25%;
+        }
+    }
+    > a, > a:visited, > a:active {
+        color: var(--green);
+        text-decoration: none;
+    }
+    
+    > a:hover {
+        color: var(--green);
+    }
+}

@@ -1,0 +1,78 @@
+.menuPopup {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+
+  z-index: 1;
+  background-color: var(--black);
+  
+  display: flex;
+  flex-direction: column;
+  
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-bottom: 1px solid var(--gray);
+    height: 64px;
+    padding: 0px 24px; 
+    
+    .logodiv{
+      display: flex;
+      align-items: center;
+      width: 85%;
+      height: 64px;        
+      border-right: 1px solid var(--gray);
+    }
+    .hamburguer{
+    }
+  }
+
+  .search{
+    padding: 12px 24px;
+    border-bottom: 1px solid var(--gray);
+  }
+
+  .menuNav{
+    padding: 12px 24px;
+    border-bottom: 1px solid var(--gray);
+    height: 50%;
+
+    svg{
+      width: 2.5rem;
+      height: 2.5rem;
+    }
+  }
+
+  .menuLink{
+    height: 7rem;
+    padding-left: 24px;
+    border-bottom: 1px solid var(--gray);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--white);
+
+    svg {
+      width: 2.2rem;
+      height: 2.2rem;
+    }
+
+  }
+  .whiteText{
+    color: var(--white);
+  }
+
+  .bottom{
+    margin: 24px;
+    margin-top: auto;
+
+    > div {
+      border-bottom: 1px solid var(--gray);
+      justify-content: flex-start;
+    }
+  } 
+}

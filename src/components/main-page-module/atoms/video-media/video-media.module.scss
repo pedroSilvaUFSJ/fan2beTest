@@ -1,0 +1,48 @@
+.video_content {
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 100%;
+  object-fit: cover;
+
+  background-color: var(--ice);
+  cursor: pointer;
+}
+
+.video_container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+
+  .responsive_iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.video_container_article {
+  position: relative;
+  padding-bottom: 56.25%;
+
+  .responsive_iframe_article {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .video_container {
+    .responsive_iframe {
+      min-height: 100%;
+    }
+  }
+}

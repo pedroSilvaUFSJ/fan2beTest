@@ -1,0 +1,55 @@
+
+.section{
+    background-color: var(--white);
+    padding-bottom: 10rem;
+    
+    .header{
+        height: 160px;
+        background-color: var(--black);
+        color: var(--white);
+        > .container {
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+    }
+    .content{
+        margin-top: 48px;
+        max-width: 544px;
+        min-height: 82rem;
+        > p { //delete account
+            height: 5rem;
+        }
+
+        h2{ 
+            font-size: 28px;
+            margin: 20px 0px;
+            &:last-of-type{ margin-top:40px;}
+        }
+
+        hr {
+            margin-top: 30px;
+            margin-bottom: 48px;
+            border: 1px solid var(--ice);
+        }
+    }
+
+    @media only screen and (max-width: 400px) {
+            
+        .header{
+            > .container {
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                height: 100%;
+            }
+        }
+        .content{
+            > p { //delete account
+                height: 5rem;
+            }    
+        }
+    }
+    
+}

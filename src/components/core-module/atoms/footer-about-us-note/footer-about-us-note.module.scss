@@ -1,0 +1,24 @@
+.bottom{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    
+    height: 5rem;
+    font-size: 15px;
+
+    color: var(--white);
+
+    a:not(:last-of-type) {
+        margin-right: 1rem;
+    }
+
+    @media only screen and (max-width: 768px) {
+        justify-content: center;
+    }
+    @media only screen and (max-width: 400px) {
+        a:not(:last-of-type) {
+            max-width: 25%;
+        }
+    }
+}

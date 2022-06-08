@@ -1,0 +1,51 @@
+.content {
+    padding-top: 3rem;
+    padding-bottom: 4.5rem;
+    position: relative;
+    display: flex;
+    .firstColumn {
+        width: 70%;
+        &__postItem:first-child {
+            > div > div > div > a:first-child { font-size: 1.6rem; } // first article title 
+            > div > div:first-child { height: 21rem; max-height: 21rem; } // max height of first main post
+        }  
+        &__postItem:not(:first-child) {
+            padding-top: 1.25rem;   //space between articles
+        }
+    }
+    .secondColumn {
+        width: 30%;
+        display: flex;
+        margin-top: 0rem;
+        flex-direction: column;
+        margin-left: 1rem;
+
+        &__advertisement{}
+        &__postItem {
+            max-width: 352px;
+        }
+    }
+    @media only screen and (max-width: 768px) {
+        flex-direction: column;
+        padding-bottom: 2rem;
+        padding-top: 1rem;
+        .firstColumn,
+        .secondColumn {
+            width: 100%;
+            padding-left: 0rem;
+            margin-left: 0rem;
+            margin-top: 1rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+            > div {
+                width: 100%;
+            }
+            &__advertisement{
+                a { width: 100%;}
+            }
+        }
+    }
+}

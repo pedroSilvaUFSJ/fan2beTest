@@ -1,0 +1,19 @@
+.content {
+    height: 2.4rem;
+    width: 3rem;
+    position: relative;
+    .svg, img {
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        fill: var(--white);
+        color: var(--white);
+        &__black {
+            fill: var(--green);
+            color: var(--green);
+        }
+        .label {
+            font-weight: bold;
+        }
+    }
+}

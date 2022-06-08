@@ -1,0 +1,116 @@
+.section {
+  min-height: 40rem;
+  background-color: var(--white);
+  padding-top: 3rem;
+  padding-bottom: 4.5rem;
+  .header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    border-bottom: 1px solid var(--lightgray2);
+
+    h1 {
+      color: var(--lightgray1);
+      font-size: 2rem;
+      margin-bottom: 0rem;
+    }
+    span {
+      color: var(--lightgray2);
+      font-size: 1.8rem;
+      max-width: 50%;
+      padding-left: 1rem;
+
+      outline: 0;
+      border: 0px;
+    }
+  }
+  .results {
+    h2 {
+      color: var(--lightgray1);
+      font-size: 1rem;
+      margin-top: 1rem;
+      margin-bottom: 0rem;
+    }
+    .entities {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-wrap: wrap;
+
+      .entity {
+        width: 30%;
+        > span {
+          font-size: 1rem;
+        }
+      }
+    }
+    .articles {
+      width: 60%;
+
+      .article {
+        > div {
+          height: unset;
+          margin-bottom: 1rem;
+        }
+        span {
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    .results {
+      .entities {
+        justify-content: space-between;
+        .entity {
+          width: 50%;
+        }
+      }
+      .articles {
+        width: 80%;
+      }
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    .results {
+      .entities {
+        .entity {
+          width: 100%;
+          span {
+            flex: 1;
+          }
+        }
+        .articles {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+/*
+
+
+        .articles{
+            width: 60%;
+            
+        }
+        
+        .entities{
+            width: 35%;
+            .entity{
+                > div {
+                    border-bottom: 0px;
+                    padding-top: 0px;
+                    padding-bottom: 16px;
+                    > div:nth-child(2) { display:none }
+                }
+                > div > div > div > img {
+                    width: 100px;
+                    height: 100px;
+                }
+            }
+        }
+*/

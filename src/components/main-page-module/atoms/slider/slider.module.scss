@@ -1,0 +1,67 @@
+.content {
+  width: 100%;
+  position: relative;
+  .controls {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    top: 10%;
+    transform: translatey(-50%);
+    align-items: center;
+    &:focus {
+      outline: none;
+    }
+    li:hover {
+      cursor: pointer;
+    }
+    .prev,
+    .next {
+      position: absolute;
+      display: inline-block;
+    }
+    .prev {
+      left: 0px;
+    }
+    .next {
+      right: 0px;
+    }
+    .next[aria-disabled="true"],
+    .prev[aria-disabled="true"] {
+      visibility: hidden;
+    }
+    .sliderButton {
+      cursor: pointer;
+      &__hidden {
+        visibility: hidden;
+      }
+
+      &__visible {
+        visibility: visible;
+      }
+
+      &__img {
+        width: 56px;
+      }
+      &__left {
+        transform: scaleX(-1);
+      }
+      &__svg {
+        position: absolute;
+        left: 0px;
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        color: var(--white);
+      }
+    }
+    @media only screen and (max-width: 768px) {
+      .prev,
+      .next {
+        visibility: hidden;
+      }
+    }
+  }
+}

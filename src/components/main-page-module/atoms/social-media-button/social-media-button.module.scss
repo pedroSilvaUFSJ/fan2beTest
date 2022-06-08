@@ -1,0 +1,25 @@
+.content {
+    background-color: var(--green);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    width: 48px;
+    height: 48px;
+    margin-left: 4px;
+    .fontAwesome {
+        text-decoration: none;
+        font-size: 32px;
+        margin-bottom: 0px;
+        align-items: baseline;
+    }
+    @media only screen and (max-width: 768px) {
+        width: 40px;
+        height: 40px;
+        margin-left: 8px;
+        .fontAwesome {
+            font-size: 25px;
+        }
+    }
+}

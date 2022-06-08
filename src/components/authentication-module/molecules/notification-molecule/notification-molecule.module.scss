@@ -1,0 +1,31 @@
+.notificationSection {
+    margin-top: 85px;
+    margin-bottom: 40px;
+}
+
+.message {
+    color: #00A988;
+    font-weight: bolder;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.actionsSection {
+    display: flex;
+    margin-top: 17px;
+
+    button {
+        width: 306px;
+        height: 55px;
+        margin-right: 20px;
+        border: 1px solid #00A988;
+        color: #00A988;
+        background-color: #fff;
+        border-radius: 5px;
+    }
+
+    .register {
+        background-color: #00A988;
+        color: #fff;
+    }
+}
